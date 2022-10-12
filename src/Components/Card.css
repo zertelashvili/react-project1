@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass&display=swap');
+
+.container {
+    max-width: 1440px;
+    width: 100vw;
+
+    height: 100vh;
+    background-color: rgba(19, 21, 24, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+
+    max-width: 412px;
+    width: 28%;
+    height: 55%;
+    background: radial-gradient(98.96% 98.96% at 50% 0%, #232A34 0%, #181E27 100%);
+    border-radius: 30px;
+}
+
+.circle {
+    width: 48px;
+    height: 48px;
+    background: #262E38;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+    margin-left: 10%;
+}
+
+.title {
+    font-family: 'Overpass';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 35px;
+    color: #FFFFFF;
+    margin-left: 10%;
+
+}
+
+.text {
+    width: 79%;
+    font-family: 'Overpass';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    color: #969FAD;
+    margin-left: 10%;
+
+
+}
+
+.nums {
+    width: 51px;
+    height: 51px;
+    background: #262E38;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15px;
+    font-family: 'Overpass';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #7C8798;
+
+
+
+}
+
+.numcard {
+
+    display: flex;
+    flex-direction: row;
+    margin-left: 5%;
+    margin-top: 7%;
+}
+
+.nums:hover {
+    background-color: #FC7614;
+    color: #FFFFFF;
+}
+
+.cardsubmit {
+    width: 79%;
+    height: 45px;
+    background: #FC7614;
+    border-radius: 22.5px;
+    margin-left: 32px;
+    margin-top: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Overpass';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 19px;
+    letter-spacing: 2px;
+    color: #FFFFFF;
+
+}
+
+.cardsubmit:hover {
+    background-color: #FFFFFF;
+    color: #FC7614;
+}
+
+#active {
+    background-color: #7C8798;
+    color: #FFFFFF;
+}
+
+@media (max-width:375px) {
+    .card {
+        width: 60%;
+        height: 50%;
+        margin: 0 auto;
+    }
+
+    .nums {
+        width: 20%;
+    }
+
+
+
+}

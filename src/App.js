@@ -1,24 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import Card from "./Components/Card";
+import Card2 from "./Components/Card2";
 
 function App() {
+  const [rate, setRate] = useState(null)
+  const [visable, setvisable] = useState(false)
+  function submit() {
+    if (rate !== null) {
+      setvisable(true)
+    }
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+
+      {!visable && <Card submit={submit} rate={setRate} />}
+      {visable && <Card2 rate={rate} />}
+
+    </>
   );
 }
 
