@@ -17,7 +17,7 @@ export default function Number(props) {
 
     return (
         <>
-            <div onClick={(event) => { changeColor(event); props.onClick() }} className='nums'>{props.children}</div>
+            <div onClick={(event) => { changeColor(event); props.onClick(event) }} className='nums'>{props.children}</div>
 
         </>
     )

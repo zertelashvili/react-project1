@@ -67,8 +67,12 @@
 @media (max-width:375px) {
     .card2 {
         width: 60%;
-        height: 50%;
+        height: 35%;
         margin: 0 auto;
+    }
+
+    .select {
+        width: 80%;
     }
 
 

@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Overpass&display=swap');
 
 .container {
-    max-width: 1440px;
+
     width: 100vw;
 
     height: 100vh;
@@ -123,13 +123,17 @@
 
 @media (max-width:375px) {
     .card {
-        width: 60%;
-        height: 50%;
+        width: 70%;
+        height: 30%;
         margin: 0 auto;
     }
 
     .nums {
         width: 20%;
+    }
+
+    .numcard {
+        margin-right: 25px;
     }
 
 
